@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <link href="Registration FormInternalcss.html" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .form-control {
+            height: 30px;
+            width: 350px;
+        }
+
+        .reg {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px 200px 50px 200px;
+        }
+
+        .form-center {
+            border: 2px solid black;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #e8dede;
+        }
+    </style>
+</head>
+<body>
+    <div class="reg">
+        <form class="form-center">
+            <header class="text-center">
+                <h1 class="display-6">Registration Form</h1>
+            </header>
+
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your Email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Enter Your Name</label>
+                <input type="password" class="form-control" placeholder="Enter your name" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+                <input type="password" class="form-control" placeholder="Enter your name" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">SSC Marks(Precentage)</label>
+                <input type="password" class="form-control" placeholder="Enter your name" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">HSC Marks(Percentage)</label>
+                <input type="password" class="form-control" placeholder="Enter your name" id="exampleInputPassword1">
+            </div>
+            <div>
+                <label>Gender</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Male
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Female
+                    </label>
+
+                </div>
+                <label>Date Of Birth</label>
+                <input type="date" class="form-control" id="dob" />
+
+            </div>
+            <br />
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Pass out Year</option>
+                <option value="1">2011-2018</option>
+                <option value="2">2019</option>
+                <option value="3">2020</option>
+                <option value="3">2021</option>
+                <option value="3">2022</option>
+            </select>
+
+
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Uplode Your Resume</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                <br />
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I Accept Terms and Condition</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
